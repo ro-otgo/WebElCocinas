@@ -5,6 +5,18 @@ const routes: Routes = [
   {
     path: '',
     loadChildren:() => import('./modules/home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path: 'recipes',
+    loadChildren:() => import('./modules/recipes/recipes.module').then(m => m.RecipesModule)
+  },
+  {
+    path: 'login',
+    loadChildren:() => import('./modules/login/login.module').then(m => m.LoginModule)
+  },
+  {
+    path: 'signup',
+    loadChildren:() => import('./modules/sign-up/sign-up.module').then(m => m.SignUpModule)
   }
 ];
 
