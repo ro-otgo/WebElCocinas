@@ -12,7 +12,7 @@
   overflow: hidden;
   height: auto;
   bottom: 0; /* Stay at the bottom */
-  height: 100dvh;
+  height: 100vh;
   display: block;
 }
 
