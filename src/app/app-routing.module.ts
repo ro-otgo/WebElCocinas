@@ -1,22 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomePageComponent } from '@modules/home/pages/home-page/home-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren:() => import('./modules/home/home.module').then(m => m.HomeModule)
+    component: HomePageComponent,
+    loadChildren:() => import('./modules/home/home.module').then(m => m.HomeModule),
   },
   {
-    path: 'recipes',
-    loadChildren:() => import('./modules/recipes/recipes.module').then(m => m.RecipesModule)
-  },
-  {
-    path: 'login',
-    loadChildren:() => import('./modules/login/login.module').then(m => m.LoginModule)
-  },
-  {
-    path: 'signup',
-    loadChildren:() => import('./modules/sign-up/sign-up.module').then(m => m.SignUpModule)
+    path: 'auth',
+    loadChildren:() => import('./modules/auth/auth.module').then(m => m.AuthModule)
   }
 ];
 
