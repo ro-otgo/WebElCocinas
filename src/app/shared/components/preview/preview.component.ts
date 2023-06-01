@@ -10,7 +10,7 @@ export class PreviewComponent {
   @Input()
   recipe!: Recipe;
   constructor() {
-    console.log('PreviewComponent: constructor');
+    console.log('myCustomComponent');
   }
 
   ngOnInit() {
