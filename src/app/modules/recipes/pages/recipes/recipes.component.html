@@ -1,1 +1,9 @@
-<p>recipes works!</p>
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let recipe of recipes" class="col-4">
+        <app-preview [recipe]="recipe" [routerLink]="['./detail/', recipe.id]"></app-preview>
+      </div>
+    </div>
+  </div>
+</div>
