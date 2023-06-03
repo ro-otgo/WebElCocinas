@@ -11,23 +11,12 @@
   padding-top: 20px;
   font-family: 'Shadows Into Light', cursive;
   background-color: #fbf2b8;
+  background: linear-gradient(9deg, rgb(247, 255, 3) 44%,#fbf2b8 100%);
   
   overflow: hidden;
-  height: auto;
   bottom: 0; /* Stay at the bottom */
-  height: 100vh;
+  height: 550vh;
   display: block;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-.square {
-  width: 100vw;
-  height: 100vh;
-  background-color: red; /* Puedes cambiar el color a tu preferencia */
 }
 
 /* The navigation menu links */
