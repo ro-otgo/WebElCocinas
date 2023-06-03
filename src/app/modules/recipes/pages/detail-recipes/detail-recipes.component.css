@@ -2,6 +2,8 @@
   width: 600px;
   margin: auto;
   display: block;
+  opacity: 0.3;
+  
 }
 
 img {
@@ -12,4 +14,47 @@ img {
 
 .recipeContent{
   text-align: justify;
+  font-size: 0.7rem;
+}
+
+.content {
+  margin-left: 180px;
+  margin-top: 20px;
+}
+
+.titulo{
+  color: rgba(207, 142, 43, 0.665);
+  font-family: 'Shadows Into Light', cursive;
+  align-items: center;
+  justify-content: center;
+}
+
+.elaboracion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #DCDCDC;
+  width: 80vw;
+  padding: 10px;
+  color: #000000;
+  font-size: 2rem;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.square h2 {
+  margin-bottom: 10px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.square .titulo2 {
+  color: rgba(0, 0, 0, 0.665);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 3rem;
+
+}
+
+
+.centro {
+  text-align: center;
 }

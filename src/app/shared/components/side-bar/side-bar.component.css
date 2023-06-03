@@ -1,5 +1,6 @@
  /* The sidebar menu */
  .sidenav {
+  height: 100vh;
   /* height: 100%; Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
   /* position: fixed; Fixed Sidebar (stay in place on scroll) */
@@ -10,11 +11,11 @@
   padding-top: 20px;
   font-family: 'Shadows Into Light', cursive;
   background-color: #fbf2b8;
+  background: linear-gradient(9deg, rgb(247, 255, 3) 44%,#fbf2b8 100%);
   
   overflow: hidden;
-  height: auto;
   bottom: 0; /* Stay at the bottom */
-  height: 100vh;
+  height: 300vh;
   display: block;
 }
 
@@ -29,7 +30,7 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #595959;
 }
 
 /* Style page content */
@@ -43,3 +44,4 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 } 
+
