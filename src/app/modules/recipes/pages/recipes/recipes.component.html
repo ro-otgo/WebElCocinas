@@ -2,8 +2,12 @@
   <div class="container">
     <div class="row">
       <div *ngFor="let recipe of recipes" class="col-4">
-        <app-preview [recipe]="recipe" [routerLink]="['./detail/', recipe.id]"></app-preview>
+        <app-preview [recipe]="recipe" [routerLink]="['./detail/', recipe.id]" class="box"></app-preview>
       </div>
+      
     </div>
+    <br/><br/><br/><br/>
   </div>
+
+ 
 </div>

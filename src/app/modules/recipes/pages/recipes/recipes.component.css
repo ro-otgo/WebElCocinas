@@ -1,4 +1,24 @@
 .wrapper {
   align-items: center;
-  display: flex;
+  /*display: flex;*/
+}
+
+.content {
+  margin-left: 180px;
+  margin-top: 20px;
+}
+
+.box {
+ 
+  color: rgba(207, 142, 43, 0.665);
+  font-family: 'Shadows Into Light', cursive;
+  margin-left: 180px;
+  margin-top: 20px;
+  box-shadow: none;
+  
+
+}
+
+.image {
+  opacity: 0.5; /* Ajusta el valor de 'opacity' entre 0 (completamente transparente) y 1 (completamente opaco) */
 }
