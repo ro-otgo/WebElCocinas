@@ -8,6 +8,8 @@
   top: 0; /* Stay at the top */
   background-color: #111; /* Black */
   padding-top: 20px;
+  font-family: 'Shadows Into Light', cursive;
+  background-color: #fbf2b8;
   
   overflow: hidden;
   height: auto;
