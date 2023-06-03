@@ -1,18 +1,30 @@
 <div class="wrapper">
   <div class="container">
-    <h1>{{recipeDetail?.title}}</h1>
+    <div class="titulo2">
+      <h1 class="centro">{{recipeDetail?.title}}</h1><br/>
+    </div>
+    <hr />
     <div class="imgContainer">
       <img class="img-fluid mx-auto d-block"
         src="{{recipeDetail?.image}}">
     </div>
-    <h2>Ingredients</h2>
-    <ul class="list-group">
-      <li class="list-group-item" *ngFor="let ingredient of recipeDetail?.ingredients "> {{ingredient.name}} - {{ingredient.quantity}}</li>
-    </ul>
     <hr />
-    <h2>Elaboration</h2>
-    <p class="recipeContent">
-      {{recipeDetail?.recipeText}}
-    </p>
+    <div class="elaboracion">
+      <h2 class="titulo2">Ingredients </h2><br/>
+      <div class="recipeContent">
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let ingredient of recipeDetail?.ingredients "> {{ingredient.name}} - {{ingredient.quantity}}</li>
+        </ul>
+    </div>
+    </div>
+    <hr />
+ 
+    <div class="elaboracion">
+      <h2 class="titulo2">Elaboration  </h2>
+      <p class="recipeContent">
+        {{recipeDetail?.recipeText}}
+      </p>
   </div>
+  </div>
+  <br/><br/><br/><br/><br/><br/>
 </div>

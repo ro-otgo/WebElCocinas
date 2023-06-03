@@ -1,5 +1,6 @@
  /* The sidebar menu */
  .sidenav {
+  height: 100vh;
   /* height: 100%; Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
   /* position: fixed; Fixed Sidebar (stay in place on scroll) */
@@ -18,6 +19,17 @@
   display: block;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.square {
+  width: 100vw;
+  height: 100vh;
+  background-color: red; /* Puedes cambiar el color a tu preferencia */
+}
+
 /* The navigation menu links */
 .sidenav a {
   padding: 6px 8px 6px 16px;
@@ -29,7 +41,7 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #595959;
 }
 
 /* Style page content */
@@ -43,3 +55,4 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 } 
+
