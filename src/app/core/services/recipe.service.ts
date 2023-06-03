@@ -9,10 +9,7 @@ export class RecipeService {
 
   recipes: Array<Recipe> = []; 
   recipesDetails: Array<RecipeDetails> = []; 
-  constructor() { }
-
-  // Retrieve all recipes
-  getRecipes(): Array<Recipe> {
+  constructor() { 
     for (let i=0;i<15;i++){
       // Crear receta
       let recipe:Recipe = {
@@ -44,6 +41,10 @@ export class RecipeService {
       this.recipes.push(recipe);
       this.recipesDetails.push(recipeDetail);
     }
+  }
+
+  // Retrieve all recipes
+  getRecipes(): Array<Recipe> {
     return this.recipes;
   }
 
