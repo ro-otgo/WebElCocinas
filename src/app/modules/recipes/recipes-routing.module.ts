@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DetailRecipesComponent } from './pages/detail-recipes/detail-recipes.component';
 import { RecipesComponent } from './pages/recipes/recipes.component';
+import { CreateRecipeComponent } from './pages/create-recipe/create-recipe.component';
 
 const routes: Routes = [
   {
@@ -11,7 +12,11 @@ const routes: Routes = [
   {
     path: 'detail/:id',
     component: DetailRecipesComponent
-  }
+  },
+  {
+    path: 'create',
+    component: CreateRecipeComponent
+  },
 ];
 
 @NgModule({
