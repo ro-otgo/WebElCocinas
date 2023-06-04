@@ -1,0 +1,17 @@
+/* https://www.thecodecampus.de/blog/angular-full-height-app-component/ */
+:host {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.wholepage{
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.carta {
+  padding: 20px;
+}
