@@ -6,6 +6,7 @@ import { RecipesComponent } from './pages/recipes/recipes.component';
 import { DetailRecipesComponent } from './pages/detail-recipes/detail-recipes.component';
 import { SharedModule } from '@shared/shared.module';
 import { CreateRecipeComponent } from './pages/create-recipe/create-recipe.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CreateRecipeComponent } from './pages/create-recipe/create-recipe.compo
   imports: [
     CommonModule,
     RecipesRoutingModule,
-    SharedModule
+    SharedModule,
+    MatExpansionModule
   ]
 })
 export class RecipesModule { }

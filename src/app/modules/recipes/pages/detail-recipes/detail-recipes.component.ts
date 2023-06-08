@@ -8,7 +8,7 @@ import { RecipeDetails } from '@core/models/RecipeDetails';
 @Component({
   selector: 'app-detail-recipes',
   templateUrl: './detail-recipes.component.html',
-  styleUrls: ['./detail-recipes.component.css']
+  styleUrls: ['./detail-recipes.component.css'],
 })
 export class DetailRecipesComponent {
   recipeDetail?: RecipeDetails;

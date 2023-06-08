@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="container">
     <div class="titulo2">
-      <h1 class="centro">{{recipeDetail?.title}}</h1><br/>
+      <h1 class="centro">{{recipeDetail?.title}}</h1>
     </div>
     <hr />
     <div class="imgContainer">
@@ -10,12 +10,21 @@
     </div>
     <hr />
     <div class="elaboracion">
-      <h2 class="titulo2">Ingredients </h2><br/>
-      <div class="recipeContent">
-        <ul class="list-group">
-          <li class="list-group-item" *ngFor="let ingredient of recipeDetail?.ingredients "> {{ingredient.name}} - {{ingredient.quantity}}</li>
-        </ul>
-    </div>
+      <div class="ingredientes">
+        <mat-expansion-panel >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Ingredients
+            </mat-panel-title>
+            <mat-panel-description>
+              See list of ingredients
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let ingredient of recipeDetail?.ingredients "> {{ingredient.name}} - {{ingredient.quantity}}</li>
+          </ul>
+        </mat-expansion-panel>
+      </div>
     </div>
     <hr />
  
