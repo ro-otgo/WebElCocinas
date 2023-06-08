@@ -5,6 +5,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { PreviewComponent } from './components/preview/preview.component';
+import { CommentsComponent } from './components/comments/comments.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -12,17 +14,20 @@ import { PreviewComponent } from './components/preview/preview.component';
     SideBarComponent,
     HeaderComponent,
     FooterComponent,
-    PreviewComponent
+    PreviewComponent,
+    CommentsComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   exports: [
     SideBarComponent,
     HeaderComponent,
     FooterComponent,
-    PreviewComponent
+    PreviewComponent,
+    CommentsComponent
   ]
 })
 export class SharedModule { }
