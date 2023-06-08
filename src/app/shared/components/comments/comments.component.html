@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <h2 class="titulo2">Comentarios </h2>
+  </div>
+  <div class="row cometarios justify-content-center">
+    <div class="col-6">
+      <form (ngSubmit)="onSubmit()" class="form_comentarios d-flex justify-content-end flex-wrap">
+        <textarea name="comentario" [(ngModel)]="model.commentText" placeholder="Comentario"></textarea>
+        <button class="btn" type="submit">Comentar</button>
+      </form>
+      <div class="media" *ngFor="let comment of commentsOfRecipe">
+        <p class="nombre">{{comment.author}} <span *ngIf="comment.date">{{ comment.date | date:'dd-MM-yyyy HH:mm'
+            }}</span> </p>
+        <p class="comentario">{{comment.textComment}}</p>
+      </div>
+    </div>
+  </div>
+</div>

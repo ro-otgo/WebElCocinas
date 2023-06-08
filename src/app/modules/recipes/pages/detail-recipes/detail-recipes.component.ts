@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Recipe } from '@core/models/Recipe';
 import { Location } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 import { RecipeService } from '@core/services/recipe.service';
 import { RecipeDetails } from '@core/models/RecipeDetails';
 
@@ -12,6 +12,8 @@ import { RecipeDetails } from '@core/models/RecipeDetails';
 })
 export class DetailRecipesComponent {
   recipeDetail?: RecipeDetails;
+
+  recipeId:number = -1;
 
   constructor(
     private route: ActivatedRoute,
@@ -24,11 +26,10 @@ export class DetailRecipesComponent {
   }
 
   getRecipe(): RecipeDetails | undefined {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-    console.log(`Route ${id}`);
-    // this.heroService.getHero(id)
-    //   .subscribe(hero => this.hero = hero);
+    const id: number = parseInt(this.route.snapshot.params['id']);
     let recipe = this.recipeService.getRecipeById(id);
+    this.recipeId = id;
+    console.log(`Receta : ${this.recipeId}`);
     return recipe;
   }
 
