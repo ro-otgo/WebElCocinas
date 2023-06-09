@@ -19,23 +19,6 @@ export class CommentServiceService {
   }
 
   getCommentsByRecipeId(recipeId?:Number): Array<Comment> {
-    if(recipeId===1){
-      return [
-        {
-        id:1,
-        author: 'Autor 1',
-        recipeId: 1,
-        textComment: 'Comentario 1'
-      },
-      {
-        id:2,
-        author: 'Autor 2',
-        recipeId: 2,
-        textComment: 'Comentario 2',
-        date: new Date()
-      },
-    ];
-    }
     return this.comments.filter(c=>c.recipeId==recipeId);
   }
 }

@@ -10,7 +10,7 @@ export class RecipeService {
   recipes: Array<Recipe> = []; 
   recipesDetails: Array<RecipeDetails> = []; 
   constructor() { 
-    for (let i=0;i<15;i++){
+    for (let i=1;i<=15;i++){
       // Crear receta
       let recipe:Recipe = {
         id: i,
