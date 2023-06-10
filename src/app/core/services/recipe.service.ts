@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Recipe } from '@core/models/Recipe';
 import { RecipeDetails } from '@core/models/RecipeDetails';
+// import * as jsonData from '@data/recipes.json';
+import {recipeDataArray } from '@data/recipesInit'
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +12,24 @@ export class RecipeService {
   recipes: Array<Recipe> = []; 
   recipesDetails: Array<RecipeDetails> = []; 
   constructor() { 
+    this.loadRecipesFromFile();
+  }
+
+  loadRecipesFromFile(): void {
+    for(let i=0; i<recipeDataArray.length;i++){
+      this.recipesDetails.push(recipeDataArray[i]);
+    }
+    this.recipesDetails.forEach(recipe=> {
+      this.recipes.push(
+        {
+          id: recipe.id,
+          image: recipe.image,
+          title: recipe.title,
+        });
+    })
+  }
+
+  createRecipes(): void{
     for (let i=1;i<=15;i++){
       // Crear receta
       let recipe:Recipe = {
