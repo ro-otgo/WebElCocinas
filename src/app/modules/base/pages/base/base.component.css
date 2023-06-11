@@ -1,5 +1,19 @@
 .content {
   margin-left: 180px;
   margin-top: 20px;
- 
+  margin-bottom: 20px;
+}
+
+.base_container {
+  bottom: 0;
+  top: 0;
+  min-height: 80%;
+  /* min-height: 100%; */
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
