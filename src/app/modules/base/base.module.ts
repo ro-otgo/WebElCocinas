@@ -6,6 +6,8 @@ import { BaseComponent } from './pages/base/base.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BaseRoutingModule } from './base-routing.module';
 
+import { MatSidenavModule } from '@angular/material/sidenav'; 
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { BaseRoutingModule } from './base-routing.module';
   imports: [
     CommonModule,
     BaseRoutingModule,
-    SharedModule
+    SharedModule,
+    MatSidenavModule,
+    MatToolbarModule
   ]
 })
 export class BaseModule { }
