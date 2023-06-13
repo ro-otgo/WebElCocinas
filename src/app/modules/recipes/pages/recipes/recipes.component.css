@@ -22,3 +22,11 @@
 .image {
   opacity: 0.5; /* Ajusta el valor de 'opacity' entre 0 (completamente transparente) y 1 (completamente opaco) */
 }
+
+.receta{
+  opacity: 0.3;
+}
+
+.receta:hover{
+  opacity: 1;
+}
