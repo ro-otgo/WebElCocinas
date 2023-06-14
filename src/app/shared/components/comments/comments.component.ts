@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Comment } from '@core/models/Comments';
 import { CommentServiceService } from '@core/services/comment-service.service';
+import { UserServiceService } from '@core/services/user-service.service';
 
 @Component({
   selector: 'app-comments',
@@ -9,7 +10,8 @@ import { CommentServiceService } from '@core/services/comment-service.service';
 })
 export class CommentsComponent implements OnInit {
 
-  constructor(private commentService: CommentServiceService) {}
+  constructor(private commentService: CommentServiceService,
+    private userService: UserServiceService) {}
 
   model = {
     commentText: '',
@@ -27,10 +29,14 @@ export class CommentsComponent implements OnInit {
     console.log("submit");
     console.log(`coment ${this.model.commentText}`);
     if(this.model.commentText){
+      let author: string = '';
+      if (this.userService.sesionActual!=null){
+        author = this.userService.sesionActual.author;
+      }
       this.commentService.addComment(
         {
           id:0,
-          author: 'Test',
+          author: author,
           recipeId: this.recipeId || -1,
           textComment:this.model.commentText,
         }
