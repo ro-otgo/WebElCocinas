@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SharedModule } from '@shared/shared.module';
+import { PermisosComponent } from './pages/permisos/permisos.component';
 
 
 @NgModule({
   declarations: [
-    HomePageComponent
+    HomePageComponent,
+    PermisosComponent
   ],
   imports: [
     CommonModule,
