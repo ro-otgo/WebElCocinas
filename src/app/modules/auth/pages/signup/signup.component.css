@@ -22,3 +22,12 @@
 .jumbotron {
   background: linear-gradient(9deg, rgb(251, 249, 205) 44%,#fbf2b8 100%);
 }
+
+.cheff{
+  text-align: left !important;
+}
+
+.error{
+  color: red;
+  text-align: left;
+}
