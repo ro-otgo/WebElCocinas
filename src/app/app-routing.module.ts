@@ -18,6 +18,11 @@ const routes: Routes = [
     pathMatch: 'full',
     component: ErrorComponent
   },
+    // Route for 404 request
+  { path: 'error', component: ErrorComponent 
+  },
+  { path: '**', component: ErrorComponent 
+  },
 ];
 
 @NgModule({
