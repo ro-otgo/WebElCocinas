@@ -8,11 +8,13 @@ import { BaseRoutingModule } from './base-routing.module';
 
 import { MatSidenavModule } from '@angular/material/sidenav'; 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { ErrorComponent } from './pages/error/error.component';
 
 
 @NgModule({
   declarations: [
-      BaseComponent
+      BaseComponent,
+      ErrorComponent
   ],
   imports: [
     CommonModule,
