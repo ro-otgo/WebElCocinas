@@ -1,12 +1,19 @@
 footer {
   /* position: fixed; */
-  padding: 8px;
+  padding: 10px;
   left: 0;
   bottom: 0;
   width: 100%;
   /* height: fit-content; */
-  background-color: #fbf2b8;
-  color: rgba(207, 142, 43, 0.665);
+  background: linear-gradient(9deg, rgb(247, 255, 3) 44%,#fbf2b8 100%);
+  color: rgba(77, 55, 21, 0.665);
   text-align: center;
   font-family: 'Shadows Into Light', cursive;
+
+.uil uil-github {
+  color: rgba(77, 55, 21, 0.665);
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+}
 }
