@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { PreviewComponent } from './components/preview/preview.component';
 import { CommentsComponent } from './components/comments/comments.component';
 import { FormsModule } from '@angular/forms';
+import { ErrorComponent } from './components/error/error.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     PreviewComponent,
-    CommentsComponent
+    CommentsComponent,
+    ErrorComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     PreviewComponent,
-    CommentsComponent
+    CommentsComponent,
+    ErrorComponent
   ]
 })
 export class SharedModule { }

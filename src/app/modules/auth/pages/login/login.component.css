@@ -22,3 +22,8 @@
 .jumbotron {
   background: linear-gradient(9deg, rgb(251, 249, 205) 44%,#fbf2b8 100%);
 }
+
+.error{
+  color: red;
+  text-align: left;
+}

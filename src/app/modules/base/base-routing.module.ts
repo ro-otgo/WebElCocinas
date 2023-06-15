@@ -14,7 +14,7 @@ const routes: Routes = [
   {
     path: 'signout',
     loadChildren:() => import('@modules/signout/signout.module').then(m => m.SignoutModule)
-  },
+  }
 ];
 
 @NgModule({
